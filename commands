@@ -1,0 +1,6 @@
+To build an image, given a fat jar build with Spring Boot:
+
+  docker image build --build-arg JAR_FILE=fatjar.jar --tag first-spring .
+
+Please note that we need to have fatjar.jar located in the very same folder as Dockerfile used to build the image.
+
