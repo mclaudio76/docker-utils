@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  spring-app:
+    image: "first-spring"
+    ports: 
+      - 9080:8080
+    #container_name: "spring-application"
+    networks:
+      - local
+networks:
+  local:
+    driver: bridge
